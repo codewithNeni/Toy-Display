@@ -6,16 +6,18 @@
 
 body {
     background-color: rgb(59, 59, 59);
-    background-color: #0070e0;
+    background-color: var(--background-color);
     height: 300vh;
 }
 
 :root {
+    --background-color: #00060ce5;
     --btn--color: #00060c;
     --secondary-font-family: "Montserrat", sans-serif;
-    --p-font-size:18px;
-    --h1-font-size:70px;
-    --main-font-family:  "Anton", sans-serif;;
+    --p-font-size: 18px;
+    --h1-font-size: 70px;
+    --main-font-family: "Anton", sans-serif;
+    ;
 }
 
 
@@ -51,11 +53,11 @@ body {
     color: white;
 }
 
-.nav-logo{
+.nav-logo {
     width: 11%;
 }
 
-.nav-right .bar svg{
+.nav-right .bar svg {
     width: 6vh;
     display: none;
 
@@ -100,30 +102,26 @@ body {
         margin-top: 5vh;
     }
 
-    .nav-left{
+    .nav-left {
         display: none;
     }
-    .nav-right{
+
+    .nav-right {
         display: none;
 
     }
-     .bar svg{
+
+    .bar svg {
         width: 5vh;
         display: inline-block;
-    
+
     }
 
-    .nav-logo img{
+    .nav-logo img {
         height: 15vh;
         margin-left: 0px;
     }
-
-
 }
-
-
-
-
 
 /* hero section starts  */
 
@@ -135,7 +133,7 @@ body {
     position: relative;
 }
 
-.hero-vectors{
+.hero-vectors {
     display: flex;
 }
 
@@ -152,6 +150,8 @@ body {
 .hero h1 span {
     background-color: #FCC22C;
     color: black;
+    border-radius: 10px;
+    padding: 0px 10px;
 }
 
 .hero p {
@@ -196,13 +196,13 @@ body {
     cursor: pointer;
 }
 
-.logo-strip img{
+.logo-strip img {
     width: 100%;
     margin-top: 70px;
 
 }
 
-.air-vector img{
+.air-vector img {
     height: 500px;
     position: absolute;
     right: 30px;
@@ -211,36 +211,80 @@ body {
 
 @media (max-width:700px) {
 
-    .hero{
+    .hero {
         margin-top: 5vh;
+        height: 70vh;
     }
 
 
-    .hero h1{
+    .hero h1 {
         width: 90vw;
-        font-size: 60px;
+        font-size: 55px;
         text-align: center;
+        line-height: 9vh;
     }
 
-    
-    
+    .hero h1 span {
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+
+    .hero p {
+        width: 90vw;
+    }
+
+    .hero-btns {
+        display: flex;
+        max-width: 100%;
+        gap: 9vw;
+        align-items: center;
+    }
+
+    .hero-btn button {
+        width: 130px;
+        height: 50px;
+        color: #00060c;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .logo-strip {
+        width: 100%;
+        height: 14vh;
+        align-items: center;
+        display: flex;
+        margin-top: 5vh;
+        justify-content: center;
+    }
+
+    .logo-strip img {
+        height: 80px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .air-vector{
+        display: none;
+    }
+
 }
 
 /* Section-01 Starts  */
 
-.section-1{
-    height: 82vh;
+.section-1 {
+    /* height: 82vh; */
     display: flex;
     width: 80%;
     margin: 0 auto;
     margin-top: 35vh;
 }
 
-.section-1-left{
+.section-1-left {
     width: 50%;
 }
 
-.section-1-left img{
+.section-1-left img {
     width: 35vw;
 }
 
@@ -251,29 +295,87 @@ body {
     justify-content: space-around;
 }
 
-.section-1-right h1{
+.section-1-right h1 {
     font-size: var(--h1-font-size);
     text-transform: uppercase;
     max-width: 80%;
     font-family: var(--main-font-family);
     color: white;
-    
+
 }
 
-.section-1-right p{
+.section-1-right p {
     font-size: var(--p-font-size);
     color: white;
     width: 78%;
     font-family: var(--secondary-font-family);
 }
 
-.section-1-right div{
+.section-1-right div {
     display: flex;
     gap: 1vw;
     align-items: center;
 }
-.section-1-right div h2{
+
+.section-1-right div h2 {
     font-size: 58px;
     color: white;
 }
 
+@media (max-width:700px) {
+
+    .section-1{
+        width: 100%;
+        margin-top: 25vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-1-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .section-1-left img {
+        width: 85%;
+    }
+
+    .section-1-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        
+    }
+
+    .section-1-div{
+        margin-top: 2vh;
+    }
+
+    .section-1-right h1{
+        font-size: 45px;
+        width: 85%;
+        font-weight: 500;
+    }
+
+    .section-1-right div {
+        display: flex;
+        gap: 4vw;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .section-1-right div h2 {
+        font-size: 45px;
+        color: white;
+    }
+
+    .section-1-right p{
+        font-size: 16px;
+    }
+
+
+}
