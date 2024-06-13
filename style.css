@@ -18,6 +18,8 @@ body {
     --main-font-family:  "Anton", sans-serif;;
 }
 
+
+
 .nav {
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -31,9 +33,6 @@ body {
     border-radius: 105px;
     font-weight: bold;
     font-size: 17px;
-
-
-
 }
 
 .nav-left {
@@ -90,13 +89,15 @@ body {
     color: var(--btn--color);
 }
 
-@media (max-width:700px) {
+@media (max-width:820px) {
 
     .nav {
         height: 10vh;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 21vh;
+        margin-top: 5vh;
     }
 
     .nav-left{
@@ -106,9 +107,9 @@ body {
         display: none;
 
     }
-    .nav-right .bar svg{
-        width: 10vh;
-        display: inline;
+     .bar svg{
+        width: 5vh;
+        display: inline-block;
     
     }
 
@@ -210,15 +211,18 @@ body {
 
 @media (max-width:700px) {
 
+    .hero{
+        margin-top: 5vh;
+    }
 
 
     .hero h1{
         width: 90vw;
         font-size: 60px;
-        text-align: left;
+        text-align: center;
     }
 
-    /
+    
     
 }
 
