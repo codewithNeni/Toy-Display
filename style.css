@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(59, 59, 59);
-    background-color: #00060c;
+    background-color: #0070e0;
     height: 300vh;
 }
 
@@ -23,33 +23,43 @@ body {
     display: flex;
     height: 12vh;
     background: rgba(0, 0, 0, 0.4);
-    max-width: 80vw;
+    max-width: 87vw;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 50px;
     border-radius: 105px;
     font-weight: bold;
+    font-size: 17px;
+
 
 
 }
 
 .nav-left {
     display: flex;
-    gap: 5.7vw;
     justify-content: space-evenly;
+    width: 40%;
 }
 
 .nav-left a {
     text-decoration: none;
-    font-size: 16px;
     color: white;
 }
 
 .nav-right a {
     text-decoration: none;
-    font-size: 16px;
     color: white;
+}
+
+.nav-logo{
+    width: 11%;
+}
+
+.nav-right .bar svg{
+    width: 6vh;
+    display: none;
+
 }
 
 .nav-logo img {
@@ -58,13 +68,14 @@ body {
 
 .nav-right {
     display: flex;
-    gap: 3.4vw;
+    gap: 4vw;
+    padding-left: 2.5vw;
     align-items: center;
-    width: 31%;
+    width: 36%;
 }
 
 .nav-right .btn button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 40px;
     border: none;
     color: var(--btn--color);
@@ -77,8 +88,41 @@ body {
 .nav-right .started-btn button {
     background-color: #0FCDAB;
     color: var(--btn--color);
+}
+
+@media (max-width:700px) {
+
+    .nav {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-left{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+
+    }
+    .nav-right .bar svg{
+        width: 10vh;
+        display: inline;
+    
+    }
+
+    .nav-logo img{
+        height: 15vh;
+        margin-left: 0px;
+    }
+
 
 }
+
+
+
+
 
 /* hero section starts  */
 
@@ -162,6 +206,20 @@ body {
     position: absolute;
     right: 30px;
     top: 693px;
+}
+
+@media (max-width:700px) {
+
+
+
+    .hero h1{
+        width: 90vw;
+        font-size: 60px;
+        text-align: left;
+    }
+
+    /
+    
 }
 
 /* Section-01 Starts  */
