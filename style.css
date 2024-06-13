@@ -7,7 +7,8 @@
 body {
     background-color: rgb(59, 59, 59);
     background-color: var(--background-color);
-    height: 300vh;
+    overflow-x: hidden;
+    height: 400vh;
 }
 
 :root {
@@ -17,7 +18,7 @@ body {
     --p-font-size: 18px;
     --h1-font-size: 70px;
     --main-font-family: "Anton", sans-serif;
-    ;
+    --phone-h1-font-size: 45px;
 }
 
 
@@ -91,6 +92,14 @@ body {
     color: var(--btn--color);
 }
 
+@media (max-width:1370px) {
+
+    .air-vector {
+        display: none;
+    }
+
+}
+
 @media (max-width:820px) {
 
     .nav {
@@ -151,7 +160,7 @@ body {
     background-color: #FCC22C;
     color: black;
     border-radius: 10px;
-    padding: 0px 10px;
+    padding: -1px 10px;
 }
 
 .hero p {
@@ -264,7 +273,7 @@ body {
         margin-top: 0px;
     }
 
-    .air-vector{
+    .air-vector {
         display: none;
     }
 
@@ -277,7 +286,7 @@ body {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 
 .section-1-left {
@@ -298,7 +307,7 @@ body {
 .section-1-right h1 {
     font-size: var(--h1-font-size);
     text-transform: uppercase;
-    max-width: 80%;
+    max-width: 70%;
     font-family: var(--main-font-family);
     color: white;
 
@@ -324,41 +333,41 @@ body {
 
 @media (max-width:700px) {
 
-    .section-1{
+    .section-1 {
         width: 100%;
         margin-top: 25vh;
         display: flex;
         flex-direction: column;
     }
 
-    .section-1-left{
+    .section-1-left {
         width: 100%;
         display: flex;
         justify-content: center;
-        
+
     }
 
     .section-1-left img {
         width: 85%;
     }
 
-    .section-1-right{
+    .section-1-right {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2vw;
-        
+
     }
 
-    .section-1-div{
+    .section-1-div {
         margin-top: 2vh;
     }
 
-    .section-1-right h1{
-        font-size: 45px;
-        width: 85%;
+    .section-1-right h1 {
+        font-size: var(--phone-h1-font-size);
         font-weight: 500;
+        text-align: left;
     }
 
     .section-1-right div {
@@ -367,15 +376,67 @@ body {
         align-items: center;
         width: 80%;
     }
-    
+
     .section-1-right div h2 {
         font-size: 45px;
         color: white;
     }
 
-    .section-1-right p{
+    .section-1-right p {
         font-size: 16px;
     }
 
+}
+
+/* Section-2 starts  */
+
+.section-2 {
+    /* height: 46vh; */
+    width: 85%;
+    background-color: #0FCDAB;
+    border-radius: 72px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    position: relative;
+    height: 55vh;
+}
+
+.section-2 h1 {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+    font-weight: 900;
+    font-family: var(--main-font-family);
+    line-height: 70px;
+}
+
+.section-2 img {
+    position: absolute;
+    left: 0vw;
+    top: 40vh;
+}
+
+@media (max-width:700px) {
+
+    .section-2 img {
+        width: 20vw;
+        top: 35vh;
+    }
+
+    .section-2 {
+        width: 90%;
+        margin-top: 10vh;
+        height: 40vh;
+    }
+
+    .section-2 h1 {
+        font-size: 40px;
+        width: 100%;
+        line-height: 45px;
+    }
 
 }
