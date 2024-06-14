@@ -11,7 +11,7 @@ html , body {
 }
 
 :root {
-    --background-color: #2d2f31e5;
+    --background-color: #1b1b1bd0;
     --btn--color: #00060c;
     --secondary-font-family: "Montserrat", sans-serif;
     --p-font-size: 18px;
@@ -694,7 +694,7 @@ html , body {
     }
 
     .section-4{
-        height: 600vw;
+        height: 480vw;
         width: 100vw;
     }
 
@@ -708,7 +708,7 @@ html , body {
         display: flex;
         flex-direction: column;
         gap: 10vh;
-        height: 90%;
+        height: 80%;
         align-items: center;
     }
 
@@ -739,7 +739,7 @@ html , body {
 .section-5{
     width: 100vw;
     height: 50vh;
-    background-color: #FF3838;
+    background-color: #464646;
 }
 
 .section-5-cont{
@@ -772,7 +772,7 @@ html , body {
 @media (max-width:710px) {
 
     .section-5{
-        height: 20vh;
+        height: 30vh;
     }
 
     .section-5 h1{
