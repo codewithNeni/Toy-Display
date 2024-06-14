@@ -584,3 +584,48 @@ html , body {
 
 /* Section-4 starts  */
 
+.section-4{
+    width: 100vw;
+    height: 150vh;
+    background-color: brown;
+    position: relative;
+}
+
+.header-4{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    background-color: blue;
+}
+
+.header-4 h1{
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+  
+}
+
+.section-4 img{
+    position: absolute;
+    left: 28%;
+    top: 18%;
+    height: 13vh;
+}
+
+.header-4 h1 span{
+    background-color: #0FCDAB;
+    color: black;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+
+.section-4-cont{
+    width: 90%;
+    background-color: #4f5153;
+    height: 100vh;
+    margin: 0 auto;
+}
