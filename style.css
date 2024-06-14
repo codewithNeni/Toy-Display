@@ -584,7 +584,7 @@ html , body {
 
 .section-4{
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
     position: relative;
 }
 
@@ -694,7 +694,7 @@ html , body {
     }
 
     .section-4{
-        height: 500vw;
+        height: 600vw;
         width: 100vw;
     }
 
@@ -708,7 +708,7 @@ html , body {
         display: flex;
         flex-direction: column;
         gap: 10vh;
-        height: 95%;
+        height: 90%;
         align-items: center;
     }
 
@@ -731,7 +731,52 @@ html , body {
         left: 1%;
         top: 6%;
         height: 6vh;
+    }    
+}
+
+/* Section-5 starts */
+
+.section-5{
+    width: 100vw;
+    height: 50vh;
+    background-color: #FF3838;
+}
+
+.section-5-cont{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    
+}
+
+.section-5 h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--main-font-family);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box-5{
+    width: 20%;
+    height: 50%;
+    background-color: #D9D9D9;
+}
+
+@media (max-width:710px) {
+
+    .section-5{
+        height: 20vh;
     }
 
+    .section-5 h1{
+        font-size: var(--phone-h1-font-size);
+    }
     
 }
